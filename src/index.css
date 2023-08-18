@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Futura PT Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Book"), url("./assets/FuturaCyrillicBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Light"), url("./assets/FuturaCyrillicLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Medium"),
+    url("./assets/FuturaCyrillicMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT Demi";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Demi"), url("./assets/FuturaCyrillicDemi.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Heavy"), url("./assets/FuturaCyrillicHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Bold"), url("./assets/FuturaCyrillicBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Extra Bold"),
+    url("./assets/FuturaCyrillicExtraBold.woff") format("woff");
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --nav-item: #111111;
+  --nav-bar-shadow: 0px 4px 4px 0px #00000040; 
+  --btn-shadow: 0px 1px 9px 0px #00000040;
+}
+
+.nav-shadow {
+  box-shadow: var(--nav-bar-shadow);
+}
+
+.button-shadow {
+  box-shadow: var(--btn-shadow);
+}
+
+.futura-heavy {
+  font-family: 'Futura PT Heavy';
+}
+
+.futura-medium {
+  font-family: 'Futura PT Medium';
+}
+
+.futura-light {
+  font-family: 'Futura PT Light';
+}
+
+.futura-nav-item {
+  font-weight: 450;
+  font-family: 'Futura PT Demi';
+  color: var(--nav-item);
+  text-transform: uppercase;
+}
+
+.futura-hero-title {
+  font-weight: 450;
+  font-family: 'Futura PT Demi';
+  color: var(--nav-item);
+  text-transform: uppercase;
+}
+
+.futura-hero-subtitle {
+  font-weight: 450;
+  font-family: 'Futura PT Demi';
+  color: var(--nav-item);
+}
+
+.linear-gradient {
+  background: linear-gradient(90.01deg, #111111 -8.85%, #B1B1B1 116.12%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.futura-hero-paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Futura PT Light';
+  color: var(--nav-item);
+}
+
+.futura-hero-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Futura PT Demi';
+}
