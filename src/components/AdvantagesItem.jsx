@@ -38,7 +38,7 @@ const AdvantagesItem = ({
           </div>
         )}
       </div>
-      <div className="mb-12 futura-light xl:text-xl text-base grow">
+      <div className="mb-12 futura-light xl:text-xl flex flex-col justify-center text-base grow">
         {button_1 && button_2 && (
           <div className="flex xl:items-start items-center flex-col md:gap-8 gap-6">
             <ButtonNumber number="1" title="Bezpośrednio do pyszczka" />
@@ -46,9 +46,9 @@ const AdvantagesItem = ({
           </div>
         )}
         {subtitle_bold && (
-          <p className="leading-6 futura-heavy text-xl">{subtitle_bold}</p>
+          <p className="leading-6 futura-medium font-medium text-xl">{subtitle_bold}</p>
         )}
-        <p className="leading-6 futura-medium text-xl">{subtitle}</p>
+        <p className="leading-6 futura-light font-semibold tracking-wider text-xl">{subtitle}</p>
       </div>
       {src && (
         <div className="flex justify-center rounded-lg relative mb-6">

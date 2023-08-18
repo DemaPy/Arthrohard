@@ -24,7 +24,8 @@ const Sklad = () => {
     offset: ["start center", "end start"],
   });
 
-  const y0 = useTransform(scrollYProgress, [0, 1], [200, -500]);
+  const y0 = useTransform(scrollYProgress, [0, 1], [200, -400]);
+  const yDog = useTransform(scrollYProgress, [0, 1], [300, 0]);
 
   const y1 = useTransform(scrollYProgress, [0, 1], [-200, 300]);
   const y2 = useTransform(scrollYProgress, [0, 1], [-300, 100]);
@@ -34,7 +35,7 @@ const Sklad = () => {
 
   return (
     <Container>
-      <section ref={container} className="h-full md:mt-12 mt-8" id="sklad">
+      <section ref={container} className="h-full md:mt-12 mt-8 overflow-hidden" id="sklad">
         <header className="xl:mb-24 md:mb-16 mb-10 text-center">
           <SectionTitle title="Skład w 5 ml" />
         </header>
@@ -70,14 +71,19 @@ const Sklad = () => {
           </div>
           <RightColumnIngridients />
         </div>
-        <div className="xl:mt-28 mt-12 flex items-center justify-center relative">
+        <div className="xl:mt-28 mt-6 xl:mb-0 mb-1 flex items-center justify-center relative">
           <motion.div
             style={{ y: y1 }}
             className="absolute top-0 xl:left-[340px] md:left-18 sm:left-6 sm:flex hidden left-0 z-10"
           >
             <img src={dogIcon2} alt="dog" />
           </motion.div>
-          <img className="relative z-20" src={dog} alt="dog" />
+          <motion.div
+            className="relative z-20"
+            style={{ y: yDog }}
+          >
+            <img className="relative z-20" src={dog} alt="dog" />
+          </motion.div>
           <motion.div
             style={{ y: y2 }}
             className="absolute top-0 xl:right-[340px] md:right-18 sm:right-6 sm:flex hidden right-0 z-10"

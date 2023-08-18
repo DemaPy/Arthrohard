@@ -45,7 +45,7 @@ const Advantages = () => {
         isCardHover={true}
         src={advantagesImage2}
         alt="dwa sposoby podawania"
-        title="Wygoda - dwa sposoby podawania"
+        title="Wygoda - <br> dwa sposoby podawania"
         button_1="Bezpośrednio do pyszczka"
         button_2="Zmieszany z karmą"
       />
@@ -55,7 +55,7 @@ const Advantages = () => {
         isCardHover={true}
         src={advantagesImage3}
         alt="skoncentrowana dawka"
-        title="Skuteczność - skoncentrowana dawka"
+        title="Skuteczność - <br> skoncentrowana dawka"
         subtitle_bold="Tylko jedna porcja dziennie."
         subtitle="To nie tylko wygoda, ale również gwarancja, że Twoje zwierzę otrzymuje wszystko, czego potrzebuje, aby cieszyć się zdrowiem i aktywnością na długo. Skorzystaj z zalet Arthrohard i zobacz różnicę w komforcie życia swojego zwierzęcia."
       />

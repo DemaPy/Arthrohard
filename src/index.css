@@ -56,6 +56,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -82,26 +83,6 @@ html {
 
 .futura-light {
   font-family: 'Futura PT Light';
-}
-
-.futura-nav-item {
-  font-weight: 450;
-  font-family: 'Futura PT Demi';
-  color: var(--nav-item);
-  text-transform: uppercase;
-}
-
-.futura-hero-title {
-  font-weight: 450;
-  font-family: 'Futura PT Demi';
-  color: var(--nav-item);
-  text-transform: uppercase;
-}
-
-.futura-hero-subtitle {
-  font-weight: 450;
-  font-family: 'Futura PT Demi';
-  color: var(--nav-item);
 }
 
 .linear-gradient {
